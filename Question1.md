@@ -1,3 +1,3 @@
-##Question 1. 
+## Question 1. 
 Your model shows 95% accuracy on a fraud-detection dataset where only 2% of transactions are fraudulent. 
 Is this a good model? How would you evaluate and improve it?
