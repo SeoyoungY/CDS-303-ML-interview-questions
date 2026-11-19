@@ -72,9 +72,7 @@ What it got right: The AI answer explains the main problem well. It says that a 
 
 What is missing or vague: Most of the answer is a list of terms. It names precision, recall, F1, and PR-AUC, but it never calculates any of them. We still do not know how much fraud this model catches. It also says to "adjust the classification threshold," but it does not say to what value or why. It never mentions the cost of mistakes, so it cannot show *how much worse* a missed fraud is than a false alarm.
 
-What an interviewer would push back on.
-- "Two models can both have 95% accuracy. How would you tell them apart?"
-- "What threshold would you choose, and why that number?"
+What an interviewer would push back on: "Two models can both have 95% accuracy. How would you tell them apart?" / "What threshold would you choose, and why that number?"
 
 Where my answer goes deeper: I did not just list metrics; I calculated them. I showed two models with the same 95% accuracy. Model A has recall 0.75, precision 0.25, and F1 0.375, but Model B has recall 0. I also placed both models on the ROC curve: Model A is better than random, and Model B is worse than random. For threshold tuning, I gave the cost-based rule C(−,+)/(C(−,+) + C(+,−)) instead of just saying "adjust it." I also warned that boosting can overfit and that splitting rare data can leave too little fraud in one subset.
 
