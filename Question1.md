@@ -14,6 +14,9 @@ Use cross validation. The "test set should be set aside for a truly final evalua
 
 How to improve:
 Lower the threshold from 0.5 to C(−,+)/(C(−,+) + C(+,−)) to obtain a cost-sensitive classifier. This catches more fraud but gives more false alarms.[7]
+Resample the training data "so that the rare class is well represented in the training set."[8] 
+Use boosting. "Records that are wrongly classified will have their weights increased in the next round."[9] But boosting can overfit, because it focus on training examples that are wrongly classified[10]
+
 
 
 [1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
@@ -29,6 +32,13 @@ Lower the threshold from 0.5 to C(−,+)/(C(−,+) + C(+,−)) to obtain a cost-
 [6]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 4 4.5.1 "Holdout Method," p. 187.
 
 [7]: Tan et al., Ch. 5 5.7.3, p. 304 (Eq. 5.83).
+
+[8]: Tan et al., Ch. 5 5.7.4, p. 305
+
+[9]: CDS 303 Lecture, *Ensemble Methods* (Week 4-1), slide 34.
+
+[10]: Tan et al., Ch. 5 5.6.5, p. 290.
+
 
 **Requirement 2** 
 
