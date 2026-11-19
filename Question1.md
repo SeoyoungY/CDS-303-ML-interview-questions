@@ -3,7 +3,7 @@ Your model shows 95% accuracy on a fraud-detection dataset where only 2% of tran
 Is this a good model? How would you evaluate and improve it?
 
 ### Answer
-**Requirement 1**
+### Requirement 1
 
 No, it is not a good model. The textbook gives this example: if 1% of transactions are fraud, "a model that predicts every transaction as legitimate has an accuracy of 99% even though it fails to detect any of the fraudulent activities."[1] Here, fraud is 2%. In 10,000 transactions, that is 200 fraud and 9,800 normal. It is right 9,800 times, so its accuracy is 9,800/10,000 = 98%, but it catches zero fraud. Our model's 95% is lower than this 98% model."Since the accuracy measure treats every class as equally important, it may not be suitable for analyzing imbalanced data sets."[2]
 
@@ -40,9 +40,9 @@ How to improve:
 [10]: Tan et al., Ch. 5 5.6.5, p. 290.
 
 
-**Requirement 2** 
+### Requirement 2 
 
-AI-generated answer
+**AI-generated answer**
 
 No, 95% accuracy does not necessarily mean the model is good. In this case, the dataset is highly imbalanced because only 2% of transactions are fraudulent.
 
@@ -65,4 +65,31 @@ I would consider the following approaches:
 -  Threshold tuning: Adjust the classification threshold to improve fraud detection rather than automatically using 0.5.
 -  Feature engineering: Create more informative features, such as transaction frequency, unusual spending patterns, and transaction amounts.
 -  Model comparison: Test different algorithms, such as Random Forest, XGBoost, and Logistic Regression, to find the best-performing model.
+
+**Critique of the AI answer** 
+
+What it got right.
+
+The AI answer explains the main problem well. It says that a model predicting "legitimate" for every transaction gets 98% accuracy, so 95% may be worse than doing nothing. Its definitions of precision and recall are correct. It also says that recall matters most because missed fraud is costly.
+
+What is missing or vague.
+
+Most of the answer is a list of terms. It names precision, recall, F1, and PR-AUC, but it never calculates any of them. We still do not know how much fraud this model catches. It also says to "adjust the classification threshold," but it does not say to what value or why. It never mentions the cost of mistakes, so it cannot show *how much worse* a missed fraud is than a false alarm.
+
+What an interviewer would push back on.
+
+- "Two models can both have 95% accuracy. How would you tell them apart?"
+- "What threshold would you choose, and why that number?"
+- "If you use SMOTE, do you apply it before or after the train/test split?"
+- "Why would XGBoost or Random Forest help here?"
+
+The AI answer cannot answer these questions.
+
+Where my answer goes deeper.
+
+I showed two models with the same 95% accuracy: one catches 150 frauds and the other catches none. I calculated recall (0.75), precision (0.25), and F1 (0.375). I compared costs (5,450 vs. 20,000) and placed both models on the ROC curve. I also computed the threshold from the cost matrix: 1/(1+100) ≈ 0.01.
+
+What I should have covered.
+
+The AI mentioned PR-AUC, class weights, and feature engineering. Class weights connect to cost-sensitive learning, and feature engineering could improve any model. My answer did not discuss these.
 
