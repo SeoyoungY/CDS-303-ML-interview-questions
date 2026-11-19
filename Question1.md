@@ -68,16 +68,11 @@ I would consider the following approaches:
 
 **Critique of the AI answer** 
 
-What it got right.
+What it got right.: The AI answer explains the main problem well. It says that a model predicting "legitimate" for every transaction gets 98% accuracy, so 95% may be worse than doing nothing. Its definitions of precision and recall are correct. It also says that recall matters most because missed fraud is costly.
 
-The AI answer explains the main problem well. It says that a model predicting "legitimate" for every transaction gets 98% accuracy, so 95% may be worse than doing nothing. Its definitions of precision and recall are correct. It also says that recall matters most because missed fraud is costly.
-
-What is missing or vague.
-
-Most of the answer is a list of terms. It names precision, recall, F1, and PR-AUC, but it never calculates any of them. We still do not know how much fraud this model catches. It also says to "adjust the classification threshold," but it does not say to what value or why. It never mentions the cost of mistakes, so it cannot show *how much worse* a missed fraud is than a false alarm.
+What is missing or vague.: Most of the answer is a list of terms. It names precision, recall, F1, and PR-AUC, but it never calculates any of them. We still do not know how much fraud this model catches. It also says to "adjust the classification threshold," but it does not say to what value or why. It never mentions the cost of mistakes, so it cannot show *how much worse* a missed fraud is than a false alarm.
 
 What an interviewer would push back on.
-
 - "Two models can both have 95% accuracy. How would you tell them apart?"
 - "What threshold would you choose, and why that number?"
 - "If you use SMOTE, do you apply it before or after the train/test split?"
@@ -85,11 +80,7 @@ What an interviewer would push back on.
 
 The AI answer cannot answer these questions.
 
-Where my answer goes deeper.
+Where my answer goes deeper.: I showed two models with the same 95% accuracy: one catches 150 frauds and the other catches none. I calculated recall (0.75), precision (0.25), and F1 (0.375). I compared costs (5,450 vs. 20,000) and placed both models on the ROC curve. I also computed the threshold from the cost matrix: 1/(1+100) ≈ 0.01.
 
-I showed two models with the same 95% accuracy: one catches 150 frauds and the other catches none. I calculated recall (0.75), precision (0.25), and F1 (0.375). I compared costs (5,450 vs. 20,000) and placed both models on the ROC curve. I also computed the threshold from the cost matrix: 1/(1+100) ≈ 0.01.
-
-What I should have covered.
-
-The AI mentioned PR-AUC, class weights, and feature engineering. Class weights connect to cost-sensitive learning, and feature engineering could improve any model. My answer did not discuss these.
+What I should have covered.: The AI mentioned PR-AUC, class weights, and feature engineering. Class weights connect to cost-sensitive learning, and feature engineering could improve any model. My answer did not discuss these.
 
