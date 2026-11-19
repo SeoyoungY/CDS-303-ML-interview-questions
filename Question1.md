@@ -70,7 +70,7 @@ I would consider the following approaches:
 
 What it got right: The AI answer explains the main problem well. It says that a model predicting "legitimate" for every transaction gets 98% accuracy, so 95% may be worse than doing nothing. Its definitions of precision and recall are correct. It also says that recall matters most because missed fraud is costly.
 
-What is missing or vague: Most of the answer is a list of terms. It names precision, recall, F1, and PR-AUC, but it never calculates any of them. We still do not know how much fraud this model catches. It also says to "adjust the classification threshold," but it does not say to what value or why. It never mentions the cost of mistakes, so it cannot show *how much worse* a missed fraud is than a false alarm.
+What is missing or vague: Most of the answer is a list of terms. It names precision, recall, F1, and PR-AUC, but it never calculates any of them. We still do not know how much fraud this model catches. It also says to "adjust the classification threshold," but it does not say to what value or why. It never mentions the cost of mistakes, so it cannot show how much worse a missed fraud is than a false alarm.
 
 What an interviewer would push back on: "Two models can both have 95% accuracy. How would you tell them apart?" / "What threshold would you choose, and why that number?"
 
