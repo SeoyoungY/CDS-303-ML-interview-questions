@@ -9,4 +9,5 @@ No, it is not a good model. The textbook gives this example: if 1% of transactio
 
 
 [1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
+
 [2]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7.1 "Alternative Metrics," p. 295.
