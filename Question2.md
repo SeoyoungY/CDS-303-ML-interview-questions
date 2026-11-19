@@ -82,12 +82,12 @@ Overall, Random Forest is a strong choice for predictive performance, while Logi
 
 **Critique of the AI answer** 
 
-What it got right: The AI chose the same model as I did: a random forest, with logistic regression as a baseline. Its table of pros and cons is correct. It also says we should not rely on accuracy alone and should think about the cost of false positives and false negatives.
+What it got right: The AI chose the same model as I did. The table of pros and cons is correct. It also says we should not rely on accuracy alone and should think about the cost of false positives and false negatives.
 
 What is missing or vague: The table is mostly a list of general terms. It says random forest "usually provides strong predictive performance," but it gives no numbers or evidence. It says random forest "reduces overfitting," but it does not explain how. It says banks need to understand decisions, but it does not say how a random forest can be explained. Its conclusion says to choose random forest "if it demonstrates better performance," but it gives no rule for when the models perform about the same.
 
 What an interviewer would push back on: "How much better is random forest? Do you have any numbers?"/ "Why does combining trees reduce overfitting?"
 
-Where my answer goes deeper: I used textbook results. On the German data, random forest got 74.5% and a decision tree got 70.90%, which is about 36 more correct predictions out of 1,000. On the Credit data, both got 85.8%. I explained how a random forest works (bootstrap samples, random attributes at each split, majority voting). I showed how to measure feature importance with OOB error. For ties, I used Occam's Razor to choose the simpler model.
+Where my answer goes deeper: I used textbook results. On the German data, random forest got 74.5% and a decision tree got 70.90%, which is about 36 more correct predictions out of 1,000. On the Credit data, both got 85.8%. I explained how a random forest works (bootstrap samples, random attributes at each split, majority voting). I showed how to measure feature importance with OOB error. Also, I used Occam's Razor to choose the simpler model.
 
 What I should have covered: The AI mentioned fairness, regulatory requirements, and computing cost. I did not discuss these. I also did not mention that decision trees can be unstable, or compare the models with recall and precision.
