@@ -9,7 +9,7 @@ No, it is not a good model. The textbook gives this example: if 1% of transactio
 
 How to evaluate: 
 Use recall and precision. The textbook says, "Recall measures the fraction of positive examples correctly predicted by the classifier," and precision is "the fraction of records that actually turns out to be positive in the group the classifier has declared as a positive class."[3] For example, recall means "how much fraud did we catch?" and precision means "how many of our fraud alarms were real?" For Model A, recall = TP/(TP+FN) = 150/200 = 0.75, precision = TP/(TP+FP) = 150/600 = 0.25, and F1 = 2rp/(r+p) = 2(0.75)(0.25)/(0.75+0.25) = 0.375. For Model B, recall = 0/200 = 0, so it catches no fraud. 
-Use the ROC curve, which "plots TPR against FPR for possible thresholds."Model A is at TPR = 0.75, FPR = 450/9,800 = 0.046, so it  is not random. Model B is at TPR = 0, FPR = 0.031, below it, so it is worse than random.[4]
+Use the ROC curve, which "plots TPR against FPR for possible thresholds."[4] Model A is at TPR = 0.75, FPR = 450/9,800 = 0.046, so it  is not random. Model B is at TPR = 0, FPR = 0.031, below it, so it is worse than random.
 
 
 [1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
