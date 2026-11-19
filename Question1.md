@@ -76,5 +76,5 @@ What an interviewer would push back on: "Two models can both have 95% accuracy. 
 
 Where my answer goes deeper: I did not just list metrics; I calculated them. I showed two models with the same 95% accuracy. Model A has recall 0.75, precision 0.25, and F1 0.375, but Model B has recall 0. I also placed both models on the ROC curve: Model A is better than random, and Model B is worse than random. For threshold tuning, I gave the cost-based rule C(−,+)/(C(−,+) + C(+,−)) instead of just saying "adjust it." I also warned that boosting can overfit and that splitting rare data can leave too little fraud in one subset.
 
-What I should have covered: The AI mentioned PR-AUC, class weights, and feature engineering. I did not discuss these. Class weights are close to cost-sensitive learning, so I could have linked them. I also gave the threshold formula but did not put numbers into it, so my answer is still a little vague there.
+What I should have covered: The AI mentioned PR-AUC, class weights, and feature engineering. I did not discuss these. I also gave the threshold formula but did not put numbers into it, so my answer is still a little vague there.
 
