@@ -42,4 +42,27 @@ Use boosting. "Records that are wrongly classified will have their weights incre
 
 **Requirement 2** 
 
+AI-generated answer
+
+No, 95% accuracy does not necessarily mean the model is good. In this case, the dataset is highly imbalanced because only 2% of transactions are fraudulent.
+
+1. Why is 95% accuracy misleading?
+Since 98% of transactions are legitimate, a model that simply predicts every transaction as legitimate would achieve 98% accuracy without detecting a single fraudulent transaction. Therefore, a 95%-accurate model may actually perform worse than a model that makes no fraud predictions at all.
+
+2. How would I evaluate the model?
+Instead of relying only on accuracy, I would use the following evaluation metrics:
+- Precision: Out of all transactions predicted as fraud, how many are actually fraudulent?
+- Recall: Out of all actual fraudulent transactions, how many does the model correctly identify?
+- F1-score: The harmonic mean of precision and recall, balancing both metrics.
+- Confusion Matrix: Shows true positives, true negatives, false positives, and false negatives.
+- PR-AUC (Precision-Recall AUC): Measures the trade-off between precision and recall and is particularly useful for imbalanced datasets.
+For fraud detection, I would pay special attention to recall because missing fraudulent transactions (false negatives) can cause significant financial losses.
+
+3. How would I improve the model?
+I would consider the following approaches:
+1. Resampling: Use oversampling (such as SMOTE) to increase fraudulent samples or undersampling to reduce legitimate transactions.
+2. Class weights: Give higher penalties to misclassifying fraudulent transactions so the model pays more attention to the minority class.
+3. Threshold tuning: Adjust the classification threshold to improve fraud detection rather than automatically using 0.5.
+4. Feature engineering: Create more informative features, such as transaction frequency, unusual spending patterns, and transaction amounts.
+5. Model comparison: Test different algorithms, such as Random Forest, XGBoost, and Logistic Regression, to find the best-performing model.
 
