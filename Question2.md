@@ -47,4 +47,37 @@ If the forest is not clearly better on the test set, I would use the simpler mod
 
 **AI-generated answer**
 
+1. Compare the Three Models
+
+| Model | Advantages | Disadvantages |
+|---|---|---|
+| Logistic Regression | Easy to interpret, fast, and provides probability estimates. | May struggle with complex, nonlinear relationships. |
+| Decision Tree | Easy to understand and visualize; captures nonlinear patterns. | Can overfit and be unstable. |
+| Random Forest | Usually provides strong predictive performance, handles complex relationships, and reduces overfitting. | Less interpretable and requires more computational resources. |
+
+2. Which Model Would I Choose?
+
+I would choose **Random Forest** because loan-default prediction involves many factors, such as income, credit score, employment history, debt, and payment history.
+
+Random Forest combines multiple decision trees to make predictions, which helps reduce overfitting and capture complex relationships between variables.
+
+However, I would also use Logistic Regression as a baseline model because financial institutions need to understand why a borrower is classified as high-risk.
+
+3. How Would I Evaluate the Models?
+
+I would compare the three models using the following metrics:
+
+- Precision: Measures how many borrowers predicted to default actually default.
+- Recall: Measures how many actual defaulters the model correctly identifies.
+- F1-score: Balances precision and recall.
+- ROC-AUC: Measures how well the model distinguishes between borrowers who default and those who do not.
+
+I would also consider the financial costs of false positives and false negatives when evaluating the models.
+
+4. Conclusion
+
+I would choose Random Forest if it demonstrates better performance on unseen data. However, I would not rely on accuracy alone. Since loan decisions involve financial risks, I would also consider interpretability, fairness, and regulatory requirements.
+
+Overall, Random Forest is a strong choice for predictive performance, while Logistic Regression is a good choice when transparency and interpretability are the highest priorities.
+
 **Critique of the AI answer** 
