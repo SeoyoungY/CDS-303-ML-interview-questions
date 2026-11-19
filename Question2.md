@@ -57,7 +57,7 @@ If the forest is not clearly better on the test set, I would use the simpler mod
 
 2. Which Model Would I Choose?
 
-I would choose **Random Forest** because loan-default prediction involves many factors, such as income, credit score, employment history, debt, and payment history.
+I would choose Random Forest because loan-default prediction involves many factors, such as income, credit score, employment history, debt, and payment history.
 
 Random Forest combines multiple decision trees to make predictions, which helps reduce overfitting and capture complex relationships between variables.
 
