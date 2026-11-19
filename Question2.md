@@ -3,7 +3,7 @@ You need a model for loan-default prediction. Compare logistic regression, a dec
 
 ## Answer
 ### Requirement 1
-
+I choose a random forest.
 
 ### Requirement 2 
 
