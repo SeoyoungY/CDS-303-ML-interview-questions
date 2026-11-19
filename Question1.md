@@ -12,6 +12,9 @@ Use recall and precision. The textbook says, "Recall measures the fraction of po
 Use the ROC curve, which "plots TPR against FPR for possible thresholds."[4] Model A is at TPR = 0.75, FPR = 450/9,800 = 0.046, so it  is not random. Model B is at TPR = 0, FPR = 0.031, below it, so it is worse than random.
 Use cross validation. The "test set should be set aside for a truly final evaluation."[5] When we split data, "a class that is overrepresented in one subset will be underrepresented in the other."[6] 
 
+How to improve:
+Lower the threshold from 0.5 to C(−,+)/(C(−,+) + C(+,−)) to obtain a cost-sensitive classifier. This catches more fraud but gives more false alarms.[7]
+
 
 [1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
 
@@ -24,4 +27,9 @@ Use cross validation. The "test set should be set aside for a truly final evalua
 [5]: CDS 303 Lecture, *Model Overfitting* (Week 3-1), slide 16.
 
 [6]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 4 4.5.1 "Holdout Method," p. 187.
+
+[7]: Tan et al., Ch. 5 5.7.3, p. 304 (Eq. 5.83).
+
+**Requirement 2** 
+
 
