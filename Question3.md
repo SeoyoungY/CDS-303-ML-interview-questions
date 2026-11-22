@@ -88,3 +88,14 @@ Conclusion
 I would combine the Elbow Method and Silhouette Score to choose a reasonable value of k. Then, I would evaluate the results using cluster separation, stability, and interpretability. A good clustering result should not only have good evaluation scores but also produce meaningful and useful groups.
 
 **Critique of the AI answer** 
+
+What it got right: The AI gives the right main ideas. It uses the elbow method and the silhouette score together to choose k. It also checks cohesion, separation, and whether each cluster has a clear meaning.
+
+What is missing or vague: Most of the answer is a list of terms. It has no formulas and no numbers. It says "A higher score generally indicates better-defined clusters," but it does not say what a good or bad silhouette score is. It does not say what to do if there is no clear elbow. It also never asks if the data has real clusters at all. It says to check "interpretability," but it does not say how.
+
+What an interviewer would push back on: -"What silhouette score is good? What does a negative score mean?" / "What if the elbow is not clear?" / "How do you know the data is not just random?"
+
+Where my answer goes deeper: I showed the silhouette formula and worked two examples- ‘0.6’ (good) and ‘−0.25’ (bad). I used the textbook warning that almost every algorithm finds clusters even in random data, so I check this first. I gave a real example where k = 6 was chosen from k = 1 to 21. I also explained how to check meaning: compare each cluster's mean with the global mean, and train a classifier with SHAP values to explain the clusters.
+
+What I should have covered: The AI mentioned stability and the Davies-Bouldin index. K-means depends on the starting centroids, so running it many times is a good check. I did not include this. I also did not explain the Davies-Bouldin index.
+
