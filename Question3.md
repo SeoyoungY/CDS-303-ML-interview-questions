@@ -52,4 +52,39 @@ Step 3: Check that the clusters make sense. The course paper compared "intraclus
 
 **AI-generated answer**
 
+1. Loan Default Prediction: Model Comparison
+
+To predict loan defaults, I would compare Logistic Regression, Decision Tree, and Random Forest.
+
+- Logistic Regression: It is easy to interpret and explains how different factors affect the probability of loan default. However, it may struggle with complex, non-linear relationships.
+- Decision Tree: It uses a series of rules to make predictions and can capture non-linear relationships. However, it can easily overfit the training data.
+- Random Forest: It combines multiple decision trees to improve prediction accuracy and reduce overfitting. However, it is more complex and less interpretable than a single decision tree.
+
+My Choice: Random Forest
+
+I would choose Random Forest because loan default prediction involves many factors, such as income, credit score, debt, and payment history. These factors may have complex relationships. Random Forest can capture these patterns while reducing overfitting.
+
+I would evaluate the model using precision, recall, F1-score, and ROC-AUC instead of relying only on accuracy, especially if the dataset is imbalanced. I would also use feature importance or SHAP values to understand the model's predictions.
+
+2. Choosing the Number of Clusters (k)
+
+When there are no ground-truth labels, I would use several methods to determine the optimal number of clusters.
+
+- Elbow Method: I would run K-Means with different values of k and calculate the Within-Cluster Sum of Squares (WCSS). I would look for the elbow point where the decrease in WCSS starts to slow down.
+- Silhouette Score: It measures how similar a data point is to its own cluster compared to other clusters. A higher score generally indicates better-defined clusters.
+- Davies-Bouldin Index: It measures the similarity between clusters. A lower score indicates better separation.
+
+How to Evaluate Clustering Without Ground-Truth Labels
+
+Since there are no true labels, I would evaluate clustering quality based on:
+
+- Cluster Separation: Check whether clusters are clearly separated.
+- Cluster Cohesion: Check whether data points within each cluster are similar.
+- Stability: Check whether similar clusters appear when running the algorithm multiple times or using different samples.
+- Interpretability: Determine whether each cluster has meaningful and understandable characteristics.
+
+Conclusion
+
+I would combine the Elbow Method and Silhouette Score to choose a reasonable value of k. Then, I would evaluate the results using cluster separation, stability, and interpretability. A good clustering result should not only have good evaluation scores but also produce meaningful and useful groups.
+
 **Critique of the AI answer** 
