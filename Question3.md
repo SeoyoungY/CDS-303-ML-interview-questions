@@ -30,13 +30,21 @@ Step 3: Check that the clusters make sense. The course paper compared "intraclus
 
 
 [1]: CDS 303 Lecture, *Cluster Analysis (1)* (Week 13-1), slide 4 "Supervised vs. Unsupervised"
+
 [2]: CDS 303 Lecture, *Cluster Analysis (1)* (Week 13-1), slide 22 "Reducing the SSE with post-processing."
+
 [3]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 8 8.5.5 "Determining the Correct Number of Clusters," p. 546.
+
 [4]: Alvarez-Garcia, Ibar-Alonso & Arenas-Parra (2024), "A comprehensive framework for explainable cluster analysis," *Information Sciences* 663, 120282 (CDS 303 course reading), p.13.
+
 [5]: CDS 303 Lecture, *Cluster Analysis (1)* (Week 13-1), slide 29 "Dendrogram."
+
 [6]: Tan et al., Ch. 8 8.5 "Cluster Evaluation," p. 532.
+
 [7]: CDS 303 Lecture, *Cluster Analysis (2)* (Week 13-2), slide 23 "Silhouette Coefficient"
+
 [8]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 8 8.5.2, "The Silhouette Coefficient," p.541.
+
 [9]: Alvarez-Garcia et al. (2024), *Computers & Education* 223, 105166 (CDS 303 course reading), 3.3.3 "Clustering" and 3.3.4 "Classification."
 
 
