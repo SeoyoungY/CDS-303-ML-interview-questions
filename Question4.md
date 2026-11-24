@@ -13,8 +13,10 @@ Why do distance-based methods like k-NN and k-means struggle in high dimensions,
 -Useless and badly scaled features add noise: Euclidean distance "treats all dimensions equally,"[5] so k-NN is "Sensitive to lots of irrelevant attributes (affect distance)."[5] Scale also matters. The textbook gives an example: "The height attribute has a low variability, ranging from 1.5 m to 1.85 m, whereas the weight attribute may vary from 90 lb. to 250 lb."[6] So height changes by at most 1.85 − 1.5 = 0.35, but weight can change by 250 − 90 = 160. Without scaling, "the proximity measure may be dominated by differences in the weights of a person."[6]
 
 2. What I would do
-- Scale the features: The textbook says standardization "is often necessary to avoid having a variable with large values dominate the results of the calculation."[7] 
+- Scale the features: The textbook says standardization "is often necessary to avoid having a variable with large values dominate the results of the calculation."[7]
+- 
 -Remove useless features: Feature selection keeps only useful attributes. This does not lose information "if redundant and irrelevant features are present."[8]
+
 -Reduce dimensions with PCA:  PCA finds new attributes that "capture the maximum amount of variation in the data."[8] The course paper say "This approach helps address the curse of dimensionality associated with k-means using Euclidean distance."[9]
 
 
