@@ -14,9 +14,7 @@ Why do distance-based methods like k-NN and k-means struggle in high dimensions,
 
 2. What I would do
 - Scale the features: The textbook says standardization "is often necessary to avoid having a variable with large values dominate the results of the calculation."[7]
-- 
 -Remove useless features: Feature selection keeps only useful attributes. This does not lose information "if redundant and irrelevant features are present."[8]
-
 -Reduce dimensions with PCA:  PCA finds new attributes that "capture the maximum amount of variation in the data."[8] The course paper say "This approach helps address the curse of dimensionality associated with k-means using Euclidean distance."[9]
 
 
