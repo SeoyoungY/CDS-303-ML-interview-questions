@@ -57,3 +57,13 @@ How would I address this problem?
 Conclusion: I would start by removing unnecessary features, apply scaling, and then use PCA if needed. This can make distance calculations more meaningful, improve model performance, and reduce computational costs.
 
 **Critique of the AI answer** 
+
+What it got right: The AI names the curse of dimensionality. It says points become spread out and distances become less meaningful. It also gives the same feature selection, scaling, and PCA. 
+
+What is missing or vague: The answer has no numbers. It says data becomes "spread out," but it does not show how fast this happens. It says distances become "less meaningful," but it does not explain why. The example about "hundreds of features" is vague. It says to scale features, but it gives no example of one feature taking over the distance. It says PCA keeps "important information," but it does not say what that information is.
+
+What an interviewer would push back on: "Why exactly do distances stop being useful?" / "How much more data do you need when you add dimensions?" / "Can you show how one feature can take over the distance?"
+
+Where my answer goes deeper: I showed how fast data becomes sparse with examples of 10 points per unit length, we need 10 points in 1D, 100 in 2D, and 10,000,000,000 in 10D. I explained why distances become similar. More dimensions add to every distance, so all distances look alike. I used the textbook height and weight example (a range of 0.35 vs. 160). I said PCA keeps "the maximum amount of variation." I also used a course paper that ran k-means after dimension reduction.
+
+What I should have covered: The AI mentioned feature engineering and lower computing cost. The lecture also lists both, but I did not include them. I also did not explain how to choose the number of PCA components.
