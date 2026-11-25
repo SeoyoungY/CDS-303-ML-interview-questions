@@ -16,6 +16,16 @@ Each component's eigenvalue is its variance, and the textbook says, "The varianc
 - Lecture example: the eigenvalues are 3 and 1, so PC1 explains 3/(3 + 1) = 75%.[6]
 - Iris data: PC1 explains 92.5% and PC2 explains 5.3%, so two components keep 97.8%.[7]
 
+The lecture gives three rules: "Cumulative proportion of explained variance should be at least 0.8," "Keep only PCs with above-average variance," and "Look at the scree plot of eigenvalue."[8]
+
+
+3. When PCA can hurt
+
+- PCA ignores the class labels. It is built only from the covariance matrix of the attributes.[9] So the direction with the most variance may not be the direction that separates the classes. In the Iris example, Setosa is well separated, but Versicolour and Virginica are "much closer to each other."[7]
+- Non-linear patterns. "PCA only considers linear combinations of the original variables."[4] The textbook says PCA is "not good at dimensionality reduction when the points have a complicated, non-linear relationship."[10]
+- Uncorrelated features. "Dimension reduction can only be achieved if the original variables are correlated. Otherwise, PCA does nothing."[4]
+
+
 
 [1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch.2.3.3 "Linear Algebra Techniques for Dimensionality Reduction," p. 52.
 
@@ -30,6 +40,12 @@ Each component's eigenvalue is its variance, and the textbook says, "The varianc
 [6]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide24 “Principle component example”
 
 [7]: Tan et al., Appendix B, Example B.2 "Iris Data," p. 688.
+
+[8]CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide 33 “# of principal components”
+
+[9]: Tan et al., Appendix B §B.1.1, Definition B.1, p. 686.
+
+[10]: Tan et al., Appendix B §B.2.3 "ISOMAP," p. 698.
 
 
 
