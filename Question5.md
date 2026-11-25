@@ -14,6 +14,7 @@ Walk me through using PCA before training a classifier: what preprocessing it ne
 Each component's eigenvalue is its variance, and the textbook says, "The variance of the ith new attribute is λi," and "The sum of the variance of the original attributes is equal to the sum of the variance of the new attributes."[5] So the share of variance for each component is its eigenvalue divided by the sum of all eigenvalues.
 
 - Lecture example: the eigenvalues are 3 and 1, so PC1 explains 3/(3 + 1) = 75%.[6]
+- Iris data: PC1 explains 92.5% and PC2 explains 5.3%, so two components keep 97.8%.[7]
 
 
 [1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch.2.3.3 "Linear Algebra Techniques for Dimensionality Reduction," p. 52.
@@ -27,6 +28,8 @@ Each component's eigenvalue is its variance, and the textbook says, "The varianc
 [5]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Appendix B §B.1.1 "PCA – Mathematical Details," p. 687.
 
 [6]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide24 “Principle component example”
+
+[7]: Tan et al., Appendix B, Example B.2 "Iris Data," p. 688.
 
 
 
