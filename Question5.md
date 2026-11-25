@@ -79,4 +79,14 @@ PCA reduces dimensionality and can improve computational efficiency, but it does
 
 Always compare model performance with and without PCA using cross-validation.
 
-**Critique of the AI answer** 
+### Critique of the AI answer
+
+What it got right: The AI covers all three parts of the question. It says PCA is unsupervised and keeps as much variance as possible. It says to standardize features and to fit preprocessing only on training data. It also makes a strong point saying "PCA preserves variance, not necessarily predictive information."
+
+What is missing or vague: Most of the answer is a list of terms with no numbers. It says to keep "around 90–95%" of the variance, but it gives no reason. Our lecture uses 80% as the rule of thumb. It never explains how to compute explained variance. It says to "Encode categorical variables into numerical values," but the textbook says PCA is for continuous attributes. It says tree models "may perform better" and that PCA "may introduce unnecessary complexity," but it does not explain why.
+
+What an interviewer would push back on: "How do you compute the share of variance for each component?" / "Is it a good idea to run PCA on encoded categorical data?"
+
+Where my answer goes deeper: I showed that each component's share is its eigenvalue divided by the sum of all eigenvalues, using the textbook. I worked two examples: 3/(3 + 1) = 75% in the lecture, and 92.5% + 5.3% = 97.8% for the Iris data. I gave the lecture's three rules for choosing the number of components. I used the Iris example to show that PCA can keep variance but still leave two classes close together. I also added two limits the AI missed: PCA is only linear, and it does nothing if the features are not correlated.
+
+What I should have covered: The AI said to fit PCA only on training data and to compare the classifier with and without PCA using cross-validation. These are important steps, and I did not include them. I also did not mention missing values or the loss of interpretability.
