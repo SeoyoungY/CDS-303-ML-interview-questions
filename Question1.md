@@ -5,21 +5,21 @@ Is this a good model? How would you evaluate and improve it?
 ## Answer
 ### Requirement 1
 
-No, it is not a good model. The textbook gives this example: if 1% of transactions are fraud, "a model that predicts every transaction as legitimate has an accuracy of 99% even though it fails to detect any of the fraudulent activities."[1] Here, fraud is 2%. In 10,000 transactions, that is 200 fraud and 9,800 normal. It is right 9,800 times, so its accuracy is 9,800/10,000 = 98%, but it catches zero fraud. Our model's 95% is lower than this 98% model."Since the accuracy measure treats every class as equally important, it may not be suitable for analyzing imbalanced data sets."[2]
+No, it is not a good model. The textbook gives this example: if 1% of transactions are fraud, "a model that predicts every transaction as legitimate has an accuracy of 99% even though it fails to detect any of the fraudulent activities."[1] Here, fraud is 2%. In 10,000 transactions, that is 200 fraud and 9,800 normal. A model that says "normal" for every transaction is right 9,800 times, so its accuracy is 9,800/10,000 = 98%, but it catches zero fraud. Our model's 95% is lower than this 98% model. "Since the accuracy measure treats every class as equally important, it may not be suitable for analyzing imbalanced data sets."[2]
 
 How to evaluate: 
 - Use recall and precision. The textbook says, "Recall measures the fraction of positive examples correctly predicted by the classifier," and precision is "the fraction of records that actually turns out to be positive in the group the classifier has declared as a positive class."[3] For example, recall means "how much fraud did we catch?" and precision means "how many of our fraud alarms were real?" Two models with 95% accuracy (500 errors): Model A (TP = 150, FN = 50, FP = 450) and Model B (TP = 0, FN = 200, FP = 300). For Model A, recall = TP/(TP+FN) = 150/200 = 0.75, precision = TP/(TP+FP) = 150/600 = 0.25, and F1 = 2rp/(r+p) = 2(0.75)(0.25)/(0.75+0.25) = 0.375. For Model B, recall = 0/200 = 0, so it catches no fraud. 
 - Use the ROC curve, which "plots TPR against FPR for possible thresholds."[4] Model A is at TPR = 0.75, FPR = 450/9,800 = 0.046, so it  is not random. Model B is at TPR = 0, FPR = 0.031,so it is worse than random.
-- Use cross validation. The "test set should be set aside for a truly final evaluation."[5] When we split data, "a class that is overrepresented in one subset will be underrepresented in the other."[6] 
+- Test on unseen data. The "test set should be set aside for a truly final evaluation."[5] When we split data, "a class that is overrepresented in one subset will be underrepresented in the other."[6] 
 
 How to improve:
-- Lower the threshold from 0.5 to C(−,+)/(C(−,+) + C(+,−)) to obtain a cost-sensitive classifier. This catches more fraud but gives more false alarms.[7]
+- Lower the threshold "from 0.5 to C(−,+)/(C(−,+) + C(+,−)) to obtain a cost-sensitive classifier." [7] This catches more fraud but gives more false alarms.
 - Resample the training data "so that the rare class is well represented in the training set."[8] 
-- Use boosting. "Records that are wrongly classified will have their weights increased in the next round."[9] But boosting can overfit, because it focus on training examples that are wrongly classified[10]
+- Use boosting. "Records that are wrongly classified will have their weights increased in the next round."[9] But boosting can overfit, because it focus on training examples that are wrongly classified. [10]
 
 
 
-[1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
+[1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
 
 [2]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5.7.1 "Alternative Metrics," p. 295.
 
