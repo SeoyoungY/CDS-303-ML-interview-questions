@@ -36,11 +36,11 @@ If the forest is not clearly better on the test set, I would use the simpler mod
 
 [9]: CDS 303 Lecture, *Ensemble Methods* (Week 4-1), slide 31 "Pros and cons – Bagging / RF."
 
-[10]: Tan et al., Ch. 5 5.6.7, Table 5.5, p. 294.
+[10]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5.6.7, Table 5.5, p. 294.
 
 [11]: CDS 303 Lecture, *Ensemble Methods* (Week 4-1), slide 30 "Variable importance"
 
-[12]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 4 4.4, Definition 4.2, p. 181.
+[12]: Tan et al., Ch. 4, Section 4.4, Definition 4.2, p. 181.
 
 
 ### Requirement 2 
