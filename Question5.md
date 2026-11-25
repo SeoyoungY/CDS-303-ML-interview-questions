@@ -27,15 +27,15 @@ The lecture gives three rules: "Cumulative proportion of explained variance shou
 
 
 
-[1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch.2.3.3 "Linear Algebra Techniques for Dimensionality Reduction," p. 52.
+[1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch.2, Section 2.3.3 "Linear Algebra Techniques for Dimensionality Reduction," p. 52.
 
 [2]: Alvarez-Garcia, Arenas-Parra & Ibar-Alonso (2024), "Uncovering student profiles. An explainable cluster analysis approach to PISA 2022," *Computers & Education* 223, 105166 (CDS 303 course reading), 4.1 "Derived student variables," p. 10.
 
-[3]: Tan et al., Appendix B §B.1.1 "PCA – Mathematical Details," p. 687.
+[3]: Tan et al., Appendix B Section B.1.1 "PCA – Mathematical Details," p. 687.
 
 [4]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide 28 "Standardize the features," and slide 39 "Pros and cons."
 
-[5]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Appendix B §B.1.1 "PCA – Mathematical Details," p. 687.
+[5]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Appendix B Section B.1.1 "PCA – Mathematical Details," p. 687.
 
 [6]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide24 “Principle component example”
 
@@ -43,9 +43,9 @@ The lecture gives three rules: "Cumulative proportion of explained variance shou
 
 [8]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide 33 “# of principal components”
 
-[9]: Tan et al., Appendix B §B.1.1, Definition B.1, p. 686.
+[9]: Tan et al., Appendix B Section B.1.1, Definition B.1, p. 686.
 
-[10]: Tan et al., Appendix B §B.2.3 "ISOMAP," p. 698.
+[10]: Tan et al., Appendix B Section B.2.3 "ISOMAP," p. 698.
 
 
 
