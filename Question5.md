@@ -41,7 +41,7 @@ The lecture gives three rules: "Cumulative proportion of explained variance shou
 
 [7]: Tan et al., Appendix B, Example B.2 "Iris Data," p. 688.
 
-[8]CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide 33 “# of principal components”
+[8]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide 33 “# of principal components”
 
 [9]: Tan et al., Appendix B §B.1.1, Definition B.1, p. 686.
 
