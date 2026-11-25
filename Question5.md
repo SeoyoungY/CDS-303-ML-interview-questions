@@ -5,7 +5,6 @@ Walk me through using PCA before training a classifier: what preprocessing it ne
 ### Requirement 1
 
 1. Preprocessing PCA needs
-2. 
 - Use continuous attributes: PCA is "a linear algebra technique for continuous attributes."[1] For categorical variables, a course paper used a different method (MCA) instead of PCA.[2]
 - Center the data. The textbook assumes the "data matrix D has been preprocessed so that the mean of each attribute (column) is 0."[3]
 - Standardize the features. The lecture's first step is "Standardize the features," and it notes that this step "affects the result," because "PCA is not scale invariant."[4] Without it, a feature with large values would have a large variance and take over the first component.
