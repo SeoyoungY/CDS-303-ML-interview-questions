@@ -19,25 +19,25 @@ How to improve:
 
 
 
-[1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
+[1]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5 5.7, p. 295; CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 7 "Problem with Accuracy" (990/1000 = 99%).
 
-[2]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7.1 "Alternative Metrics," p. 295.
+[2]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5.7.1 "Alternative Metrics," p. 295.
 
-[3]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5 5.7.1 "Alternative Metrics," p. 297 (Eqs. 5.74–5.76: precision, recall, F1); CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 9 "Alternative Measures."
+[3]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 5, Section 5.7.1 "Alternative Metrics," p. 297 (Eqs. 5.74–5.76: precision, recall, F1); CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slide 9 "Alternative Measures."
 
 [4]: CDS 303 Lecture, *Imbalanced Class Problem* (Week 3), slides 17–18.
 
 [5]: CDS 303 Lecture, *Model Overfitting* (Week 3-1), slide 16.
 
-[6]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 4 4.5.1 "Holdout Method," p. 187.
+[6]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Ch. 4, Section 4.5.1 "Holdout Method," p. 187.
 
-[7]: Tan et al., Ch. 5 5.7.3, p. 304 (Eq. 5.83).
+[7]: Tan et al., Ch. 5, Section 5.7.3, p. 304 (Eq. 5.83).
 
-[8]: Tan et al., Ch. 5 5.7.4, p. 305
+[8]: Tan et al., Ch. 5, Section 5.7.4, p. 305
 
 [9]: CDS 303 Lecture, *Ensemble Methods* (Week 4-1), slide 34.
 
-[10]: Tan et al., Ch. 5 5.6.5, p. 290.
+[10]: Tan et al., Ch. 5, Section 5.6.5, p. 290.
 
 
 ### Requirement 2 
