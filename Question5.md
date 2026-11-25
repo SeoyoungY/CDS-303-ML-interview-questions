@@ -53,4 +53,30 @@ The lecture gives three rules: "Cumulative proportion of explained variance shou
 
 **AI-generated answer**
 
+1. What is PCA?
+PCA (Principal Component Analysis) is an unsupervised dimensionality reduction technique that reduces the number of features while preserving as much variance as possible.
+
+2. Preprocessing
+Before applying PCA:
+- Handle missing values.
+- Encode categorical variables into numerical values.
+- Standardize features because PCA is sensitive to feature scales.
+- Fit preprocessing steps only on training data to prevent data leakage.
+
+3. Choosing the Number of Components
+- Explained Variance: Retain components that explain around 90–95% of the total variance.
+- Scree Plot: Identify the elbow point where additional components contribute less variance.
+- Cross-Validation: Compare classifier performance with different numbers of components.
+
+4. When Can PCA Hurt?
+- Loss of Predictive Information: PCA preserves variance, not necessarily predictive information.
+- Reduced Interpretability: Principal components are combinations of original features.
+- Tree-Based Models: Decision trees and random forests may perform better with original features.
+- Low-Dimensional Data: PCA may introduce unnecessary complexity.
+
+5. Key Takeaway
+PCA reduces dimensionality and can improve computational efficiency, but it does not always improve classification performance.
+
+Always compare model performance with and without PCA using cross-validation.
+
 **Critique of the AI answer** 
