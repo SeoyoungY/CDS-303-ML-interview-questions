@@ -37,7 +37,7 @@ The lecture gives three rules: "Cumulative proportion of explained variance shou
 
 [5]: Tan, Steinbach & Kumar, *Introduction to Data Mining*, Appendix B Section B.1.1 "PCA – Mathematical Details," p. 687.
 
-[6]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide24 “Principle component example”
+[6]: CDS 303 Lecture, *Dimensionality reduction* (Week 11-1),slide24 “Principal component example”
 
 [7]: Tan et al., Appendix B, Example B.2 "Iris Data," p. 688.
 
